@@ -26,7 +26,17 @@ class Artist
       self.find(name)
     else
       self.create(name)
-    end    
+    end
+  end
+
+  def self.find(name)
+    self.all.detect { |artist| artist.name == name}
+  end
+
+  def self.create(name)
+    artist = Artist.new(name)
+    artist.save
+    artist
   end
 
 
