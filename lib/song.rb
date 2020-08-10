@@ -21,6 +21,12 @@ class Song
     artist.add_song(self)
   end
 
+  def self.find_by_artist(artist)
+    Song.all.select do |song|
+    song.artist == artist
+  end
+end
+
   def save
     @@all << self
   end
