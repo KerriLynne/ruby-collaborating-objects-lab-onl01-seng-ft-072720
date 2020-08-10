@@ -6,6 +6,6 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.new(self.path).each {|file| file.gsub ("#{@path}/", "") }
+    @files = Dir.glob(self.path).each {|file| file.gsub ("#{@path}/", "") }
 
 end
