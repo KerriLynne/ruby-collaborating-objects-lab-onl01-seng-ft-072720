@@ -7,7 +7,6 @@ class Artist
     @name = name
   end
 
-  def artist_all(name)
-    
+
 
 end
