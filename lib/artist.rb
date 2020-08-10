@@ -9,13 +9,13 @@ class Artist
 
   def save
     @@all << self
-  end  
+  end
 
   def self.all
     @@all
   end
 
-  def add_song(song)
-    self.songs << song
+  def add_song
+    self.songs.name
   end
 end
