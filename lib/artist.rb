@@ -46,7 +46,7 @@ class Artist
 
   def print_songs()
     # needed to use collect here- not each
-    puts songs.collect {|song| song.name}
+    puts songs.collect {|song| song.name} # took away @songs
   end
 
 
